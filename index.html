@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOANER</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Loan calculator</h1>
+
+        <!-- calling calculate function defined in loan.js -->
+        <p>Amount ($):
+            <input type="number" id="amount" onchange="calculate()">
+        </p>
+
+        <p>Interest rate:
+            <input type="number" id="rate" onchange="calculate()">
+        </p>
+
+        <p>Months to pay:
+            <input type="number" id="months" onchange="calculate()">
+        </p>
+
+        <h2 id="total"></h2>
+    </div>
+
+
+
+    <script src="./loan.js"></script>
+</body>
+</html>
